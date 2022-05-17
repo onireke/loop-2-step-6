@@ -1,0 +1,175 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::before *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #78accd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  display: grid;
+  grid-template-rows: 9% auto 14%;
+  width: 22rem;
+  height: 27rem;
+  background-color: white;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  color: grey;
+}
+
+.middle {
+  border-top: 1px solid hsl(0deg 0% 87%);
+  border-bottom: 1px solid hsl(0deg 0% 87%);
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  place-items: center;
+  padding: 1rem;
+}
+
+.middle > p {
+  margin: 0;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  color: #090912;
+  font-size: 0.9rem;
+}
+.bottom > .first-span {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: 2px solid #df754e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: ;
+}
+
+.day {
+  color: #818f9f;
+}
+
+.grey-number {
+  color: #e0e0e0;
+}
+
+.brown-number {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #de6e46;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.border-number {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: 1px solid #ae5989;
+}
+
+.week-days {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+}
+
+.sup-div {
+  position: relative;
+  border-radius: 50%;
+  height: 0.5rem;
+  width: 0.5rem;
+  /* border: 1px solid green; */
+}
+
+.sup {
+  position: absolute;
+  /* width: 1rem; */
+  /* right: 20px; */
+  top: -30px;
+  right: 1px;
+  background-color: red;
+}
+
+.a {
+  padding: 10px;
+}
+.day-number {
+  position: relative;
+  border: 2px solid pink;
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.day-number::after {
+  content: "5";
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  height: 13px;
+  width: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  text-align: center;
+  background-color: hsl(326deg 34% 52%);
+  font-size: 8px;
+}
+
+.brown-number2 {
+  position: relative;
+  border: 2px solid tomato;
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brown-number2::after {
+  content: "6";
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  height: 13px;
+  width: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  text-align: center;
+  background-color: tomato;
+  font-size: 8px;
+}
